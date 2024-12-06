@@ -14,9 +14,8 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color: #f4f4f4;
+            background-color: antiquewhite;
             box-sizing: border-box;
-            background-color: antiquewhites;
         }
         .image-column {
             display: flex;
@@ -34,35 +33,43 @@
         .social-links {
             margin-top: 20px;
             display: flex;
-            gap: 15px;
+            gap: 10px;
+            flex-wrap: wrap; /* Allows wrapping for smaller screens */
+            justify-content: center;
         }
         .social-links a {
             text-decoration: none;
-            color: #fff;
+            color: #000;
             background-color: white;
-            padding: 10px 15px;
+            padding: 8px 12px;
             border-radius: 5px;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
             transition: background-color 0.3s;
         }
         .social-links a:hover {
-            background-color: green;
+            background-color: lightgreen;
+        }
+        .social-links img {
+            width: 20px; /* Smaller icons for better mobile view */
+            height: 20px;
+            border-radius: 50%;
         }
     </style>
 </head>
 <body>
     <div class="social-links">
         <a href="https://www.instagram.com/madhu__msg" target="_blank">
-            <img src="images/insta.jpg" alt="Instagram Icon"> 
-            Instagram
+            <img src="images/insta.jpg" alt="Instagram Icon"> Instagram
         </a>
         <a href="https://wa.me/918074467620" target="_blank">
             <img src="images/whatsapp.jpg" alt="WhatsApp Icon"> WhatsApp
         </a>
         <a href="https://www.facebook.com/madhu.chitikana" target="_blank">
-            <img src="images/facebook.jpg" alt="Facebook Icon">
-             Facebook
+            <img src="images/facebook.jpg" alt="Facebook Icon"> Facebook
         </a>
     </div>
     <div class="image-column">
